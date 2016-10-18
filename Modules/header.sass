@@ -1,0 +1,147 @@
+body
+  font-family: "Roboto",sans-serif
+  overflow-x: hidden
+  overflow-y: scroll
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizelegibility
+  /* to prevent horizontal scroll in mozilla, and chrome*/
+  h2
+    margin-top: 100px
+    font-weight: 900
+    margin-bottom: 10px
+    text-align: center
+
+.navbar
+  margin-bottom: 0px
+  color: white
+.navbar-default
+  .navbar-brand
+    color: white
+    line-height: 30px
+    &:hover
+      color: white
+    &:focus
+      color: white
+  border: none
+  background: rgba(0,0,0,0)
+  .navbar-nav
+    li
+      a
+        color: white
+        line-height: 20px
+        padding: 18px 32px 5px 32px
+        //this for the underline effect
+        &::after
+          content: ""
+          position: absolute
+          bottom: 0
+          left: 0
+          width: 100%
+          height: 1px
+          visibility: hidden
+          transform: scaleX(0)
+          background-color: white
+          transition: all .3s ease
+
+        &:hover
+          color: white
+          //transform: translateY(1px)
+          &::after
+            visibility: visible
+            transform: scaleX(0.5)
+        &:visited
+          color: white
+
+        &:focus
+          outline: none
+          color: #fff
+
+
+
+//video styles
+#header-video
+  width: 100vw
+  height: 100vh
+  position: relative
+  overflow: hidden
+  overflow-x: hidden
+  background:
+    image: url("./videos/Snapshots/typing.jpg")
+    size: cover
+    repeat: no-repeat
+
+
+
+  video
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    z-index: 1
+
+  .text
+    position: absolute
+    z-index: 2
+    color: white
+    background: rgba(0,0,0,0.4)
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    h1
+      font-weight: 900
+      font-size: 6em
+      color: rgba(255,255,255, 0.9)
+      text-shadow: 2px 2px 3px #000
+			
+   
+    img
+      max-width: 30px
+      background-color: rgba(255, 255, 255, 0.8)
+      border-radius: 50%
+      margin-top: 80px
+      animation: down 0.8s infinite linear
+			
+
+      &:hover
+        animation: none
+        cursor: pointer
+
+
+  @keyframes down
+    100%
+      transform: translateY(10px)
+
+
+@media screen and (max-width: 768px)
+  .navbar-nav
+    li
+      &:hover
+        background: rgba(70,130,180,0.5)
+      a
+        color: white
+        line-height: 30px
+        padding: 15px 20px
+        background: rgba(70,130,180,0.5)
+        text-align: center
+        border: none
+
+
+  .navbar-collapse
+    border: none
+
+  #header-video
+    .text
+      h1
+        font-weight: 900
+        font-size: 3em
+      h3
+        font-size: 18px
