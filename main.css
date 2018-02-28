@@ -203,7 +203,7 @@ body h2 {
 }
 #about p {
   margin-top: 20px;
-  line-heigth: 1.6;
+  line-height: 1.6;
   font-size: 19px;
   letter-spacing: 1;
 }
@@ -222,7 +222,7 @@ body h2 {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column;
+          flex-direction: column; 
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -321,6 +321,6 @@ body h2 {
   color: none;
   display: inline-block;
 }
-#contact h3 {
+#  h3 {
   text-align: center;
 }

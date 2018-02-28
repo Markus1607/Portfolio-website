@@ -4,19 +4,16 @@ $(function(){
     $("html, body").animate({
       scrollTop: $($(this).attr("href")).offset().top
     }, 500, "linear", function(){});
-
+    
     e.preventDefault();
   });
 	
-
 //This will scroll to the about div
 $(".text img").on("click", function(){
   $("html, body").animate({
     scrollTop: $("#about").offset().top
   }, 500);
 })
-
-
 
 
 
@@ -49,7 +46,6 @@ $(".text img").on("click", function(){
 			
 		};
 		
-		
 		if(wScroll >= 674){
 			
 			
@@ -57,9 +53,6 @@ $(".text img").on("click", function(){
 		}else {
 			$("#portfolio figure").removeClass("animated fadeInDown");
 		}
-		
-		
-
   }); // End of scrolling function
 	
 		
