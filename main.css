@@ -176,10 +176,11 @@ body h2 {
   }
 }
 #about {
+  padding-top: 25px;
   text-align: center;
   background: url("img/Background/asanoha-400px.png");
   border-top: none;
-  padding-bottom: 65px;
+  padding-bottom: 100px;
 }
 #about h2 {
   margin-top: 115px;
@@ -189,6 +190,11 @@ body h2 {
   font-style: bold;
   font-size: 23px;
 }
+
+#left-in, #right-in {
+  display: none;
+} 
+
 #about .progress {
   margin-bottom: 30px;
   height: 30px;
@@ -234,6 +240,7 @@ body h2 {
   color: #fff;
 }
 #portfolio figure {
+  display: none;
   width: 400px;
   height: 260px;
   border-radius: 2%;
@@ -279,9 +286,8 @@ body h2 {
 
 #contact {
   text-align: center;
-  background: url("img/Background/clouds.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+	background: url("img/Background/clouds.png");  
+  background-repeat: repeat;
   padding-bottom: 150px;
 }
 #contact .icons-wrapper {
@@ -307,20 +313,34 @@ body h2 {
   margin-left: auto;
   margin-right: auto;
 }
+
+#contact .fa {
+  display: none;
+}
+
 #contact .icons-wrapper .fa {
   color: rgba(0, 0, 0, 0.8);
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
 }
+
+#contact .icons-wrapper a {
+  text-decoration: none;
+  display: inline-block;
+}
+#contact h3 {
+  text-align: center;
+}
+
 #contact .icons-wrapper .fa:hover {
   -webkit-transform: rotate(360deg) scale(1.5);
       -ms-transform: rotate(360deg) scale(1.5);
           transform: rotate(360deg) scale(1.5);
 }
-#contact .icons-wrapper a {
-  color: none;
-  display: inline-block;
-}
-#contact h3 {
-  text-align: center;
+
+
+.fa-hover {
+  -webkit-transform: rotate(360deg) scale(1.5);
+      -ms-transform: rotate(360deg) scale(1.5);
+          transform: rotate(360deg) scale(1.5);
 }

@@ -4,7 +4,6 @@ $(function(){
     $("html, body").animate({
       scrollTop: $($(this).attr("href")).offset().top
     }, 500, "linear", function(){});
-    
     e.preventDefault();
   });
 	
@@ -15,17 +14,13 @@ $(".text img").on("click", function(){
   }, 500);
 })
 
-
-
 //this function is for events firing when scrolling
   $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
     var about = $("#about").offset().top;
-		var portfolio = $("#portfolio").offset().top;
+    var contact = $('#contact').offset().top;
 	
-
-
-    if(wScroll >= (about - 280)){
+    if(wScroll >= (about - 40)){
       $(".navbar-default").css({
         "backgroundColor": 'rgba(0,0,0,0.6)',
 				"color": "#fff",
@@ -38,21 +33,25 @@ $(".text img").on("click", function(){
     }
 		
 		if(wScroll >= (about - 320)){
-			$("#left-in").addClass("animated slideInLeft");
-			$("#right-in").addClass("animated slideInRight")
-		}else{
-			$("#left-in").removeClass("animated slideInLeft");
-			$("#right-in").removeClass("animated slideInRight");
-			
-		};
-		
-		if(wScroll >= 674){
-			
-			
-			$("#portfolio figure").addClass("animated fadeInDown");
-		}else {
-			$("#portfolio figure").removeClass("animated fadeInDown");
-		}
+      $('#left-in, #right-in').css({
+        "display": "block"
+      })
+			$("#left-in").addClass("animated bounceInLeft");
+			$("#right-in").addClass("animated bounceInRight")
+    }
+    
+		if(wScroll >= (about + 15)){
+      $('.fa').css({
+        "display": "block"
+      });
+      $(".fa").addClass("animated bounceInUp");
+      $(".fa").hover(
+        function(){
+         $(this).removeClass('animated bounceInUp').toggleClass('fa-hover');
+        }
+      )
+    }
+
   }); // End of scrolling function
 	
 		
