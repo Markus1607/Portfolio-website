@@ -1,3 +1,3 @@
 # Portfolio-website
 Under construction 
-[Check out the code here](https://markus1607.github.io/Portfolio-website/)
+[Check out live website here](https://markus1607.github.io/Portfolio-website/)
