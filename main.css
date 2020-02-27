@@ -3,7 +3,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility
+  text-rendering: optimizelegibility;
   /* to prevent horizontal scroll in mozilla, and chrome */
 }
 body h2 {
@@ -46,11 +46,11 @@ body h2 {
   height: 1px;
   visibility: hidden;
   -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-          transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
   background-color: white;
   -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .navbar-default .navbar-nav li a:hover {
   color: white;
@@ -58,8 +58,8 @@ body h2 {
 .navbar-default .navbar-nav li a:hover::after {
   visibility: visible;
   -webkit-transform: scaleX(0.5);
-      -ms-transform: scaleX(0.5);
-          transform: scaleX(0.5);
+  -ms-transform: scaleX(0.5);
+  transform: scaleX(0.5);
 }
 .navbar-default .navbar-nav li a:visited {
   color: white;
@@ -85,8 +85,8 @@ body h2 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -109,16 +109,16 @@ body h2 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 #header-video .text h1 {
   font-weight: 900;
@@ -132,23 +132,23 @@ body h2 {
   border-radius: 50%;
   margin-top: 80px;
   -webkit-animation: down 0.8s infinite linear;
-          animation: down 0.8s infinite linear;
+  animation: down 0.8s infinite linear;
 }
 #header-video .text img:hover {
   -webkit-animation: none;
-          animation: none;
+  animation: none;
   cursor: pointer;
 }
 @-webkit-keyframes down {
   100% {
     -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
 }
 @keyframes down {
   100% {
     -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
 }
 @media screen and (max-width: 768px) {
@@ -195,9 +195,10 @@ body h2 {
   font-size: 23px;
 }
 
-#left-in, #right-in {
+#left-in,
+#right-in {
   display: none;
-} 
+}
 
 #about .progress {
   margin-bottom: 30px;
@@ -231,12 +232,12 @@ body h2 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; 
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-bottom: 90px;
 }
 #portfolio h2 {
@@ -255,16 +256,16 @@ body h2 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   overflow: hidden;
   margin-top: 18px;
 }
@@ -273,12 +274,12 @@ body h2 {
   height: 100%;
   border-radius: 2%;
   -webkit-transition: all 0.8s ease;
-          transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 #portfolio figure img:hover {
   -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
   cursor: pointer;
 }
 #portfolio .wrapper {
@@ -290,7 +291,7 @@ body h2 {
 
 #contact {
   text-align: center;
-	background: url("img/Background/clouds.png");  
+  background: url("img/Background/clouds.png");
   background-repeat: repeat;
   padding-bottom: 150px;
   border-top: 2px solid grey;
@@ -304,16 +305,16 @@ body h2 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 70px 0 0 30px;
   margin-left: auto;
   margin-right: auto;
@@ -326,7 +327,7 @@ body h2 {
 #contact .icons-wrapper .fa {
   color: rgba(0, 0, 0, 0.8);
   -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #contact .icons-wrapper a {
@@ -339,13 +340,12 @@ body h2 {
 
 #contact .icons-wrapper .fa:hover {
   -webkit-transform: rotate(360deg) scale(1.5);
-      -ms-transform: rotate(360deg) scale(1.5);
-          transform: rotate(360deg) scale(1.5);
+  -ms-transform: rotate(360deg) scale(1.5);
+  transform: rotate(360deg) scale(1.5);
 }
-
 
 .fa-hover {
   -webkit-transform: rotate(360deg) scale(1.5);
-      -ms-transform: rotate(360deg) scale(1.5);
-          transform: rotate(360deg) scale(1.5);
+  -ms-transform: rotate(360deg) scale(1.5);
+  transform: rotate(360deg) scale(1.5);
 }
