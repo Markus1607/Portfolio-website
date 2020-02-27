@@ -2,9 +2,9 @@ $(function() {
   //autoplay video
   $("#myVideo")[0].autoplay = true
 
-  if ($("#myVideo")[0].play) {
-    location.reload()
-  }
+  // if ($("#myVideo")[0].play) {
+  //   location.reload()
+  // }
 
   //This is smooth scrolling to divs
   $("a[href^='#']").on("click", function(e) {
