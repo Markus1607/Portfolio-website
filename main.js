@@ -1,4 +1,7 @@
 $(function() {
+  //autoplay video
+  $("#myVideo")[0].autoplay = true
+
   //This is smooth scrolling to divs
   $("a[href^='#']").on("click", function(e) {
     $("html, body").animate(
@@ -26,7 +29,6 @@ $(function() {
   $(window).scroll(function() {
     var wScroll = $(this).scrollTop()
     var about = $("#about").offset().top
-    var contact = $("#contact").offset().top
 
     if (wScroll >= about - 40) {
       $(".navbar-default").css({
