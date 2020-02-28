@@ -366,8 +366,8 @@ body h2 {
     font-size: 19px;
   }
   #contact .icons-wrapper {
-    max-width: 100%;
-    margin: 37px 0 0 42px;
+    max-width: 90%;
+    margin: 47px auto 50px auto;
   }
 }
 
