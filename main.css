@@ -220,6 +220,30 @@ body h2 {
   letter-spacing: 1;
 }
 
+@media screen and (max-width: 360px) {
+  #about {
+    padding-bottom: 40px;
+  }
+
+  #about h2 {
+    margin-top: 50px;
+    font-size: 25px;
+  }
+  #about p {
+    font-size: 17px;
+    margin-top: 18px;
+  }
+  #about h3 {
+    font-size: 19px;
+  }
+
+  #about .progress {
+    margin-bottom: 8px;
+    height: 27px;
+    text-align: center;
+  }
+}
+
 #portfolio {
   background: url("img/Background/book.jpg");
   background-size: cover;
@@ -294,9 +318,9 @@ body h2 {
   text-align: center;
   background: url("img/Background/clouds.png");
   background-repeat: repeat;
-  padding-bottom: 150px;
   border-top: 2px solid grey;
 }
+
 #contact .icons-wrapper {
   max-width: 50%;
   display: -webkit-box;
@@ -316,9 +340,7 @@ body h2 {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 70px 0 0 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 70px auto 150px auto;
 }
 
 #contact .fa {
@@ -329,6 +351,24 @@ body h2 {
   color: rgba(0, 0, 0, 0.8);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 360px) {
+  #contact {
+    padding-bottom: 20px;
+  }
+
+  #contact h2 {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  #contact h3 {
+    font-size: 19px;
+  }
+  #contact .icons-wrapper {
+    max-width: 100%;
+    margin: 37px 0 0 42px;
+  }
 }
 
 #contact .icons-wrapper a {
