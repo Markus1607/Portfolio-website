@@ -1,8 +1,7 @@
 $(function() {
-  //autoplay video
-
   //This is smooth scrolling to divs
   $("a[href^='#']").on("click", function(e) {
+    e.preventDefault()
     $("html, body").animate(
       {
         scrollTop: $($(this).attr("href")).offset().top,
@@ -11,7 +10,6 @@ $(function() {
       "linear",
       function() {}
     )
-    e.preventDefault()
   })
 
   //This will scroll to the about div
@@ -28,8 +26,7 @@ $(function() {
   $(window).scroll(function() {
     var wScroll = $(this).scrollTop()
     var about = $("#about").offset().top
-
-    if (wScroll >= about - 40) {
+    if (wScroll >= about - 40 && $(this).width() > 360) {
       $(".navbar-default").css({
         backgroundColor: "rgba(0,0,0,0.6)",
         color: "#fff",
@@ -40,25 +37,35 @@ $(function() {
         backgroundColor: "rgba(0,0,0,0)",
       })
     }
-
-    if (wScroll >= about - 320) {
+    if (wScroll >= about - 320 && $(this).width() > 360) {
       $("#left-in, #right-in").css({
         display: "block",
       })
       $("#left-in").addClass("animated bounceInLeft")
       $("#right-in").addClass("animated bounceInRight")
     }
-
-    if (wScroll >= about + 15) {
+    if (wScroll >= about && $(this).width() > 360) {
       $(".fa").css({
         display: "block",
       })
-      $(".fa").addClass("animated bounceInUp")
+
       $(".fa").hover(function() {
-        $(this)
-          .removeClass("animated bounceInUp")
-          .toggleClass("fa-hover")
+        $(this).toggleClass("fa-hover")
       })
+    }
+
+    //stop animations on mobile
+    if ($(this).width() <= 360) {
+      $("#left-in, #right-in").css({
+        display: "block",
+      })
+
+      $(".fa").css({
+        display: "block",
+      })
+      $(".fa")
+        .removeClass("fa-3x")
+        .addClass("fa-2x")
     }
   }) // End of scrolling function
 }) // End of main Jquery main function
