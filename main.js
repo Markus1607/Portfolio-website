@@ -1,4 +1,10 @@
 $(function() {
+  $(function() {
+    $(document).click(function(event) {
+      $(".navbar-collapse").collapse("hide")
+    })
+  })
+
   //This is smooth scrolling to divs
   $("a[href^='#']").on("click", function(e) {
     e.preventDefault()
@@ -8,7 +14,7 @@ $(function() {
       },
       500,
       "linear",
-      function() {}
+      null
     )
   })
 
@@ -56,6 +62,12 @@ $(function() {
 
     //stop animations on mobile
     if ($(this).width() <= 360) {
+      if (wScroll >= about - 40) {
+        $(".navbar-header").addClass("mobile-nav")
+      } else {
+        $(".navbar-header").removeClass("mobile-nav")
+      }
+
       $("#left-in, #right-in").css({
         display: "block",
       })
