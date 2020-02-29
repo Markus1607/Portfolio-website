@@ -163,6 +163,7 @@ body h2 {
     transform: translateY(10px);
   }
 }
+
 @media screen and (max-width: 768px) {
   .navbar-nav li:active {
     background-color: rgba(43, 42, 42, 0.5);
@@ -186,7 +187,8 @@ body h2 {
 
   #header-video .text h1 {
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2em;
+    text-align: center;
   }
   #header-video .text h3 {
     font-size: 18px;
