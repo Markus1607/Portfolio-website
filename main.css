@@ -187,7 +187,7 @@ body h2 {
 
   #header-video .text h1 {
     font-weight: 900;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
   }
   #header-video .text h3 {
@@ -247,11 +247,19 @@ body h2 {
     font-size: 25px;
   }
   #about p {
-    font-size: 17px;
+    font-size: 1.55rem;
+    max-width: 400px;
     margin-top: 18px;
+    display: inline-block;
   }
   #about h3 {
-    font-size: 19px;
+    font-size: 18px;
+  }
+
+  #header-video .text h1 {
+    font-weight: 900;
+    font-size: 2em;
+    text-align: center;
   }
 
   #about .progress {
