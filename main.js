@@ -61,7 +61,7 @@ $(function() {
     }
 
     //stop animations on mobile
-    if ($(this).width() <= 360) {
+    if ($(this).width() <= 360 || $(this).width() === 414) {
       if (wScroll >= about - 40) {
         $(".navbar-header").addClass("mobile-nav")
       } else {
